@@ -11,24 +11,33 @@
     <div class="container">
       <img src="logo.png" alt="Thunder Ridge Ampride logo" class="logo" />
       <h1>Join Our Team</h1>
-      <p>Apply to work with us at any of our 5 locations</p>
+      <p>We’re always looking for great people</p>
     </div>
   </header>
 
   <section class="intro">
     <div class="container">
-      <h2>Application Form</h2>
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
-        <label for="name">Full Name *</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+      <h2>Apply for a Job</h2>
+      <p>We're a local, community-first group of convenience stores and gas stations looking for people who care about service and customers. Fill out the form below and someone from our team will follow up with you!</p>
 
-        <label for="email">Email *</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data" class="job-form">
+        
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" required />
 
-        <label for="phone">Phone Number *</label><br>
-        <input type="tel" id="phone" name="phone" required><br><br>
+        <label for="dob">Date of Birth *</label>
+        <input type="date" id="dob" name="dob" required />
 
-        <label for="location">Preferred Location *</label><br>
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="address">Home Address *</label>
+        <input type="text" id="address" name="address" required />
+
+        <label for="location">Preferred Location *</label>
         <select id="location" name="location" required>
           <option value="">-- Select a location --</option>
           <option value="Thunder Ridge Ampride">Thunder Ridge Ampride</option>
@@ -36,16 +45,35 @@
           <option value="Neighborhood Mart">Neighborhood Mart</option>
           <option value="Uni Mart">Uni Mart</option>
           <option value="7 Star Liquor and Tobacco">7 Star Liquor and Tobacco</option>
-        </select><br><br>
+        </select>
 
-        <label for="position">Position Applied For *</label><br>
-        <input type="text" id="position" name="position" required><br><br>
+        <label for="position">Position Applied For *</label>
+        <input type="text" id="position" name="position" required />
 
-        <label for="availability">Availability (days/hours)</label><br>
-        <textarea id="availability" name="availability" rows="3"></textarea><br><br>
+        <label for="worked-here">Have you worked at one of our stores before? *</label>
+        <select id="worked-here" name="worked_here" required>
+          <option value="">-- Select --</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
 
-        <label for="resume">Upload Resume (optional)</label><br>
-        <input type="file" id="resume" name="resume"><br><br>
+        <label for="education">Education</label>
+        <textarea id="education" name="education" rows="2" placeholder="High school, college, certifications..."></textarea>
+
+        <label for="experience">Relevant Experience</label>
+        <textarea id="experience" name="experience" rows="3" placeholder="Tell us about any skills, customer service experience, or industry knowledge you have."></textarea>
+
+        <label for="history">Job History</label>
+        <textarea id="history" name="history" rows="4" placeholder="Where have you worked before? What were your roles?"></textarea>
+
+        <label for="references">References (2 people not related to you)</label>
+        <textarea id="references" name="references" rows="4" placeholder="Include names, phone numbers, and relationships."></textarea>
+
+        <label for="availability">Availability (days/hours)</label>
+        <textarea id="availability" name="availability" rows="3"></textarea>
+
+        <label for="resume">Upload Resume (optional)</label>
+        <input type="file" id="resume" name="resume" />
 
         <button type="submit">Submit Application</button>
       </form>
