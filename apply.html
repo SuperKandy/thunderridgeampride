@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply for a Job - Thunder Ridge Ampride</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="Thunder Ridge Ampride logo" class="logo" />
+      <h1>Join Our Team</h1>
+      <p>Apply to work with us at any of our 5 locations</p>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="container">
+      <h2>Application Form</h2>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
+        <label for="name">Full Name *</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email *</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number *</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="location">Preferred Location *</label><br>
+        <select id="location" name="location" required>
+          <option value="">-- Select a location --</option>
+          <option value="Thunder Ridge Ampride">Thunder Ridge Ampride</option>
+          <option value="Panthertown">Panthertown</option>
+          <option value="Neighborhood Mart">Neighborhood Mart</option>
+          <option value="Uni Mart">Uni Mart</option>
+          <option value="7 Star Liquor and Tobacco">7 Star Liquor and Tobacco</option>
+        </select><br><br>
+
+        <label for="position">Position Applied For *</label><br>
+        <input type="text" id="position" name="position" required><br><br>
+
+        <label for="availability">Availability (days/hours)</label><br>
+        <textarea id="availability" name="availability" rows="3"></textarea><br><br>
+
+        <label for="resume">Upload Resume (optional)</label><br>
+        <input type="file" id="resume" name="resume"><br><br>
+
+        <button type="submit">Submit Application</button>
+      </form>
+
+      <p><a href="index.html">← Back to Homepage</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Thunder Ridge Ampride Group. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
