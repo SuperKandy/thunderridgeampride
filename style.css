@@ -93,7 +93,6 @@ h1, h2 {
   .dropdown-menu {
   background-color: #d32f2f;
   border: 1px solid #a30000;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
   top: 35px;
   left: 0;
