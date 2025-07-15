@@ -243,3 +243,47 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
+
+/* ---------- Promo Image Layout ---------- */
+.promo-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.promo-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.promo-column img {
+  width: 140px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* On small screens, stack all images below */
+@media (max-width: 768px) {
+  .promo-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .promo-column {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .promo-column img {
+    width: 45%;
+    max-width: 180px;
+  }
+}
