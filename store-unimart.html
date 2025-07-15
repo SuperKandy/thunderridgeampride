@@ -8,26 +8,27 @@
 </head>
 <body>
   <nav class="navbar">
-  <div class="nav-container">
-    <a href="index.html" class="nav-logo">Thunder Ridge Ampride</a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li class="dropdown">
-        <a href="#">Locations ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="store-thunderridge.html">Thunder Ridge Ampride</a></li>
-          <li><a href="store-panthertown.html">Panthertown</a></li>
-          <li><a href="store-neighborhood.html">Neighborhood Mart</a></li>
-          <li><a href="store-unimart.html">Uni Mart</a></li>
-          <li><a href="store-7star.html">7 Star Liquor and Tobacco</a></li>
-        </ul>
-      </li>
-      <li><a href="loyalty.html">Loyalty Program</a></li>
-      <li><a href="apply.html">Apply for a Job</a></li>
-      <li><a href="about.html">About Us</a></li>
-    </ul>
-  </div>
-</nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Thunder Ridge Ampride</a>
+      <div class="nav-toggle" id="navToggle">&#9776;</div>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Locations ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="store-thunderridge.html">Thunder Ridge Ampride</a></li>
+            <li><a href="store-panthertown.html">Panthertown</a></li>
+            <li><a href="store-neighborhood.html">Neighborhood Mart</a></li>
+            <li><a href="store-unimart.html">Uni Mart</a></li>
+            <li><a href="store-7star.html">7 Star Liquor and Tobacco</a></li>
+          </ul>
+        </li>
+        <li><a href="loyalty.html">Loyalty Program</a></li>
+        <li><a href="apply.html">Apply for a Job</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
   <header>
     <div class="container">
       <img src="logo.png" alt="Thunder Ridge Ampride logo" class="logo" />
@@ -54,5 +55,13 @@
       <p>&copy; 2025 Thunder Ridge Ampride Group. All rights reserved.</p>
     </div>
   </footer>
+  <script>
+  const navToggle = document.getElementById('navToggle');
+  const navMenu = document.getElementById('navMenu');
+
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
