@@ -8,16 +8,17 @@ Official website for Thunder Ridge Ampride Group — a locally operated gas stat
 [www.thunderridgeampride.com](https://www.thunderridgeampride.com)
 
 ## 📁 Project Structure
-index.html # Homepage
-style.css # Main styling (red theme)
-about.html # About the company
-apply.html # Job application form
-loyalty.html # Rewards & loyalty program
-store-thunderridge.html # Individual store pages
-store-panthertown.html
-store-neighborhood.html
-store-unimart.html
-store-7star.html
+- index.html # Homepage
+- style.css # Main styling (red theme)
+- about.html # About the company
+- apply.html # Job application form
+- loyalty.html # Rewards & loyalty program
+- store-thunderridge.html # Individual store pages
+- store-panthertown.html
+- store-neighborhood.html
+- store-unimart.html
+- store-7star.html
+
 /logo.png # Company logo
 /deal1.png, deal2.png # Promo images
 /reward1.png, reward2.png
