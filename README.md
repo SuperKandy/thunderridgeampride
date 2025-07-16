@@ -18,10 +18,9 @@ Official website for Thunder Ridge Ampride Group — a locally operated gas stat
 - store-neighborhood.html
 - store-unimart.html
 - store-7star.html
-
-/logo.png # Company logo
-/deal1.png, deal2.png # Promo images
-/reward1.png, reward2.png
+- /logo.png # Company logo
+- /deal1.png, deal2.png # Promo images
+- /reward1.png, reward2.png
 
 ## 🧱 Features
 
